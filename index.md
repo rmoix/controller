@@ -8,6 +8,18 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <a href="#" class="btn--success">Success Button</a>
 
+<details><summary>CLICK ME</summary>
+<p>
+
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
