@@ -2,29 +2,115 @@
 <head>
 <title>vMix Buttons by Crazy-Logic</title>
 
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
-
-
-function vMixFunction(vFunction,vAddress)
-{
-	var connection = new XMLHttpRequest();
-	//http://192.168.122.199:8088/api/?Function=Merge&Input=1&Duration=500&Mix=0
-	connection.open("GET", "http://"+vAddress+"/api/?"+vFunction, false);
-	connection.send( null );
-}
+	//Vmix API: https://vmixapi.com
+	function vMixFunction(vFunction)
+	{
+		var connection = new XMLHttpRequest();
+		//http://192.168.1.145:8088/api/?Function=Merge&Input=1&Duration=500&Mix=0
+		connection.open("GET", "http://192.168.1.145:8088/api/?"+vFunction, false);
+		connection.send( null );
+	}
 </script>
 
 </head>
 <body>
+<div class="container">
   
-  
-<button type="button" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0','192.168.122.199:8088')">Take 1</button>
+<h1>Controles FEFA</h1>
 
-<button type="button" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0','192.168.122.199:8088')">Take 2 </button>
+<h5>CUARTOS</h5>
+<hr/>
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">Primer cuarto</button>
 
-<button type="button" onClick="vMixFunction('Function=OverlayInput3&Input=4','192.168.122.199:8088')">Overlay 3</button>
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">Segundo cuarto </button>
+
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">Tercer cuarto</button>
+
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">Cuarto cuarto </button>
+<br><br>
+
+<h5>PELOTA</h5>
+<hr/>
+
+<div class="container">
+	<div class="row">
+	  <div class="col">
+		<div class="alert alert-dark" role="alert">LOCAL</div>
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">PELOTA</button>
+	  </div>
+	  <div class="col">
+		<div class="alert alert-dark" role="alert">VISITANTE</div>
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">PELOTA</button>
+	  </div>
+	</div>
+</div>
+
+<br><br>
+<h5>PUNTUACIONES</h5>
+<hr/>
+
+<div class="container">
+	<div class="row">
+	  <div class="col">
+		<div class="alert alert-dark" role="alert">LOCAL</div>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 6</button>
+
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 6  </button>
+		<br><br>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 2</button>
+
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 2  </button>
+		<br><br>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 1</button>
+
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 1  </button>
+	  </div>
+	  <div class="col">
+		<div class="alert alert-dark" role="alert">VISITANTE</div>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 6</button>
+
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 6 </button>
+
+		<br><br>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 2</button>
+
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 2  </button>
+		<br><br>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 1</button>
+
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 1  </button>
+	  </div>
+	</div>
+</div>
 
 
+<br><br>
+<h5>YARDAS</h5>
+<hr/>
+
+<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">1a y 10</button>
+<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">2a y 5</button>
+<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">3a y largo</button>
+<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">3a y 1</button>
+<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">1a y gol</button>
+	 
+<br><br>
+<h5>OTROS</h5>
+<hr/>
+
+<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">BANDERA OUT</button>
+
+<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">BANDERA IN</button>
+
+
+</div> <!-- tanca container inicial -->
 
 </body>
 </html>
