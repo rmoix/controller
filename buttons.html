@@ -27,11 +27,11 @@
 
 <h5>CUARTOS</h5>
 <hr/>
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=1r%20cuarto&SelectedName=cuarto.Text')">Primer cuarto</button>
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=1er%20cuarto&SelectedName=cuarto.Text')">Primer cuarto</button>
 
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=2n%20cuarto&SelectedName=cuarto.Text')">Segundo cuarto </button>
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=2o%20cuarto&SelectedName=cuarto.Text')">Segundo cuarto </button>
 
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=3r%20cuarto&SelectedName=cuarto.Text')">Tercer cuarto </button>
+<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=3er%20cuarto&SelectedName=cuarto.Text')">Tercer cuarto </button>
 
 <button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=4o%20cuarto&SelectedName=cuarto.Text')">Cuarto cuarto </button>
 <br><br>
@@ -43,11 +43,11 @@
 	<div class="row">
 	  <div class="col">
 		<div class="alert alert-dark" role="alert">LOCAL</div>
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">PELOTA</button>
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=balonlocal.Source')">PELOTA</button>
 	  </div>
 	  <div class="col">
 		<div class="alert alert-dark" role="alert">VISITANTE</div>
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">PELOTA</button>
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=balonvisit.Source')">PELOTA</button>
 	  </div>
 	</div>
 </div>
@@ -74,18 +74,17 @@
 	  </div>
 	  <div class="col">
 		<div class="alert alert-dark" role="alert">VISITANTE</div>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 6</button>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D6&SelectedName=puntos visit.Text')">- 6</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 6 </button>
-
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D6&SelectedName=puntos visit.Text')">+ 6  </button>
 		<br><br>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 2</button>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D2&SelectedName=puntos visit.Text')">- 2</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 2  </button>
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D2&SelectedName=puntos visit.Text')">+ 2  </button>
 		<br><br>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">- 1</button>
+		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos visit.Text')">- 1</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=CutDirect&Input=2&Duration=500&Mix=0')">+ 1  </button>
+		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos visit.Text')">+ 1  </button>
 	  </div>
 	</div>
 </div>
@@ -105,9 +104,7 @@
 <h5>OTROS</h5>
 <hr/>
 
-<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">BANDERA OUT</button>
-
-<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">BANDERA IN</button>
+<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=flag.Source')">BANDERA IN/OUT</button>
 
 
 </div> <!-- tanca container inicial -->
