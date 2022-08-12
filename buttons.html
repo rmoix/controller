@@ -17,6 +17,12 @@
 		connection.open("GET", "http://192.168.1.145:8088/api/?"+vFunction, false);
 		connection.send( null );
 	}
+
+	function recuperaYardas()
+	{
+		var entrada = document.getElementById("yrd").value;
+		vMixFunction('Function=SetText&Input=15&Value='+entrada+'&SelectedName=yardas.Text')
+	}
 </script>
 
 </head>
@@ -94,11 +100,10 @@
 <h5>YARDAS</h5>
 <hr/>
 
-<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">1a y 10</button>
-<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">2a y 5</button>
-<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">3a y largo</button>
-<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">3a y 1</button>
-<button type="button" class="btn btn-info" onClick="vMixFunction('Function=CutDirect&Input=1&Duration=500&Mix=0')">1a y gol</button>
+<div class="input-group mb-3">
+	<input type="text" name="yrd" id="yrd" class="form-control" placeholder="1er y 10" aria-label="Yardas" aria-describedby="button-addon2">
+	<button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="recuperaYardas()">Enviar</button>
+  </div>
 	 
 <br><br>
 <h5>OTROS</h5>
