@@ -29,87 +29,100 @@
 <body>
 <div class="container">
   
-<h1>Controles FEFA</h1>
+<h1>Controles PADEL</h1>
 
-<h5>CUARTOS</h5>
+<h5>EQUIPO 1</h5>
 <hr/>
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=1er%20cuarto&SelectedName=cuarto.Text')">Primer cuarto</button>
+<div class="alert alert-dark" role="alert">NOMBRES</div>
 
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=2o%20cuarto&SelectedName=cuarto.Text')">Segundo cuarto </button>
+	<div class="input-group mb-3">
+		<input type="text" name="yrd" id="yrd" class="form-control" placeholder="APELLIDO / APELLIDO" aria-label="Yardas" aria-describedby="button-addon2">
+		<button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="recuperaYardas()">Enviar</button>
+	</div>
 
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=3er%20cuarto&SelectedName=cuarto.Text')">Tercer cuarto </button>
-
-<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=4o%20cuarto&SelectedName=cuarto.Text')">Cuarto cuarto </button>
-<br><br>
-
-<h5>POSESION</h5>
-<hr/>
-
+<div class="alert alert-dark" role="alert">PUNTUACIONES</div>
 <div class="container">
 	<div class="row">
-	  <div class="col">
-		<div class="alert alert-dark" role="alert">LOCAL</div>
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=balonlocal.Source')">PELOTA</button>
-	  </div>
-	  <div class="col">
-		<div class="alert alert-dark" role="alert">VISITANTE</div>
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=balonvisit.Source')">PELOTA</button>
-	  </div>
+
+		<div class="col-sm-2">
+			<button type="button" class="btn btn-warning" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=balonlocal.Source')">PELOTA</button>
+		</div>
+
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=1er%20cuarto&SelectedName=cuarto.Text')">0</button>
+
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=2o%20cuarto&SelectedName=cuarto.Text')">15</button>
+
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=3er%20cuarto&SelectedName=cuarto.Text')">30</button>
+
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=4o%20cuarto&SelectedName=cuarto.Text')">40</button>
+
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=4o%20cuarto&SelectedName=cuarto.Text')">AD</button>
+		</div>
+
+		<div class="col-sm-6">
+			Set 1:
+			<button type="button" class="btn btn-danger"  onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+			<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
+			Set 2:
+			<button type="button" class="btn btn-danger"  onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+			<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
+			Set 3:
+			<button type="button" class="btn btn-danger"  onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+			<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
+		</div>
+
 	</div>
 </div>
 
 <br><br>
-<h5>PUNTUACIONES</h5>
-<hr/>
 
+<h5>EQUIPO 2</h5>
+<hr/>
+<div class="alert alert-dark" role="alert">NOMBRES</div>
+
+	<div class="input-group mb-3">
+		<input type="text" name="yrd" id="yrd" class="form-control" placeholder="APELLIDO / APELLIDO" aria-label="Yardas" aria-describedby="button-addon2">
+		<button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="recuperaYardas()">Enviar</button>
+	</div>
+
+<div class="alert alert-dark" role="alert">PUNTUACIONES</div>
 <div class="container">
 	<div class="row">
-	  <div class="col">
-		<div class="alert alert-dark" role="alert">LOCAL</div>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D6&SelectedName=puntos local.Text')">- 6</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D6&SelectedName=puntos local.Text')">+ 6  </button>
-		<br><br>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D2&SelectedName=puntos local.Text')">- 2</button>
+		<div class="col-sm-2">
+			<button type="button" class="btn btn-warning" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=balonlocal.Source')">PELOTA</button>
+		</div>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D2&SelectedName=puntos local.Text')">+ 2  </button>
-		<br><br>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+		<div class="col-sm-4">
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=1er%20cuarto&SelectedName=cuarto.Text')">0</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
-	  </div>
-	  <div class="col">
-		<div class="alert alert-dark" role="alert">VISITANTE</div>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D6&SelectedName=puntos visit.Text')">- 6</button>
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=2o%20cuarto&SelectedName=cuarto.Text')">15</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D6&SelectedName=puntos visit.Text')">+ 6  </button>
-		<br><br>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D2&SelectedName=puntos visit.Text')">- 2</button>
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=3er%20cuarto&SelectedName=cuarto.Text')">30</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D2&SelectedName=puntos visit.Text')">+ 2  </button>
-		<br><br>
-		<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos visit.Text')">- 1</button>
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=4o%20cuarto&SelectedName=cuarto.Text')">40</button>
 
-		<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos visit.Text')">+ 1  </button>
-	  </div>
+			<button type="button" class="btn btn-primary" onClick="vMixFunction('Function=SetText&Input=15&Value=4o%20cuarto&SelectedName=cuarto.Text')">AD</button>
+		</div>
+
+		<div class="col-sm-6">
+			Set 1:
+			<button type="button" class="btn btn-danger"  onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+			<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
+			Set 2:
+			<button type="button" class="btn btn-danger"  onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+			<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
+			Set 3:
+			<button type="button" class="btn btn-danger"  onClick="vMixFunction('Function=SetText&Input=15&Value=-%3D1&SelectedName=puntos local.Text')">- 1</button>
+			<button type="button" class="btn btn-success" onClick="vMixFunction('Function=SetText&Input=15&Value=%2B%3D1&SelectedName=puntos local.Text')">+ 1  </button>
+		</div>
 	</div>
 </div>
 
+<br><br><br>
 
-<br><br>
-<h5>YARDAS</h5>
-<hr/>
-
-<div class="input-group mb-3">
-	<input type="text" name="yrd" id="yrd" class="form-control" placeholder="1er y 10" aria-label="Yardas" aria-describedby="button-addon2">
-	<button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="recuperaYardas()">Enviar</button>
-  </div>
-	 
-<br><br>
-<h5>OTROS</h5>
-<hr/>
-
-<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=flag.Source')">BANDERA IN/OUT</button>
+<button type="button" class="btn btn-danger" onClick="vMixFunction('Function=SetImageVisible&Input=15&SelectedName=flag.Source')">BREAKPOINT IN/OUT</button>
 
 
 </div> <!-- tanca container inicial -->
