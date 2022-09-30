@@ -14,7 +14,7 @@
 	{
 		var connection = new XMLHttpRequest();
 		//http://192.168.1.145:8088/api/?Function=Merge&Input=1&Duration=500&Mix=0
-		connection.open("GET", "vmixcentral.ddns.net:8088/api/?"+vFunction, false);
+		connection.open("GET", "http://192.168.1.145:8088/api/?"+vFunction, false);
 		connection.send( null );
 	}
 
@@ -59,7 +59,7 @@
 
 			<button type="button" class="btn btn-primary btn-lg" onClick="vMixFunction('Function=SetText&Input=15&Value=30&SelectedName=puntos-equipo1.Text')">30</button>
 
-			<button type="button" class="btn btn-primary btn-lg" onClick="vMixFunction('Function=SetText&Input=15&Value=440&SelectedName=puntos-equipo1.Text')">40</button>
+			<button type="button" class="btn btn-primary btn-lg" onClick="vMixFunction('Function=SetText&Input=15&Value=40&SelectedName=puntos-equipo1.Text')">40</button>
 
 			<button type="button" class="btn btn-primary btn-lg" onClick="vMixFunction('Function=SetText&Input=15&Value=AD&SelectedName=puntos-equipo1.Text')">AD</button>
 		</div>
